@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 const formidable = require("formidable");
 
-router.post("/image", (req, res, next) => {
+router.post("/image", (req, res) => {
   const form = formidable({
     uploadDir: "/var/tmp",
     keepExtensions: false,
